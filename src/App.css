@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;700&display=swap');
+:root{
+  --font-primary: "Fira Sans", serif;
+  --light-grey: #edeff0;
+  --main: #5dbea3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  color: #303233;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.page{
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 800px;
+  font-family: var(--font-primary);
 }
 
-.App-link {
-  color: #61dafb;
+.h2{
+  margin: 0;
+  font-weight: 300;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h1{
+  font-weight: bold;
+  margin: 8px 0;
 }
+
+.photo{
+  margin-bottom: 16px;
+  width: 30%;
+}
+
+.skills{
+  margin: 16px 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.skill__wrapper:not(:last-child){
+  margin-right: 16px ;
+}
+
+.skill__wrapper{
+  background: var(--light-grey);
+  margin: 8px 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.grayscale{
+  filter: grayscale(1);
+}
+
+.grayscale:hover{
+  transition: all 300ms;
+  filter: grayscale(0);
+}
+
