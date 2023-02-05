@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 
 const skills_list = ['Python 3', 'JavaScript', 'Git', 'Flask', 'React', 'HTML', 'CSS', 'Linux', 'Nginx']
-const lang_list = ['Russian - Native', 'English - A2']
+const lang_list = ['Russian - Native', 'English - B1']
 function App() {
     return (
         <div className="page">
